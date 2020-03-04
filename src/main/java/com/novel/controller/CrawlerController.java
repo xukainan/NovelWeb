@@ -116,8 +116,6 @@ public class CrawlerController {
 
 	/**
 	 * 每天23点59分 自动爬虫更新
-	 * 
-	 * @param request
 	 */
 	@Scheduled(cron = "0 59 23 * * ?")
 	public void scheduleRunCrawler() {
