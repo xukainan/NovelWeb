@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps{
                 bat "mvn clean package spring-boot:repackage"
-                bat "printenv"
+                bat "set"
             }
         }
     }
